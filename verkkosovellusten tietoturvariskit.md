@@ -11,7 +11,7 @@
 * Virtuaaliohjelmisto : Oracle VM VirtualBox
 * Virtuaalikoneen prosessori: i5-6600K CPU @ 3.50GHz
 * Virtuaalikoneen käyttöjärjestelmä: Ubuntu 21.10 (64-bit)
-
+* Virtuaalikoneen RAM : 4 GB
 
 
 
