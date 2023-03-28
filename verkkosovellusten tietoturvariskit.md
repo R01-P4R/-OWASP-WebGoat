@@ -1,7 +1,7 @@
 
-# H14
 
- Harjoituksen tarkoituksena on luoda uusia komentoja käytten Bashia ja Pythonia(3).
+
+ Harjoituksen tarkoituksena on 
  
 ### Laitteisto
  
