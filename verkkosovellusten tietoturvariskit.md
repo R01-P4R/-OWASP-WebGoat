@@ -17,7 +17,7 @@
 
 
 
-## Komento Bashilla (11:16)
+## SQL-injektio hyökkäys 
 
 Luodaan komento, joka tervehtii käyttäjää tämän syöttämän nimen perusteella. 
 
