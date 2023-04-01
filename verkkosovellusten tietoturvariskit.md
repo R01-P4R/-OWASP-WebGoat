@@ -33,7 +33,15 @@ Toinen komento minkä avulla hyökkäys onnistui oli ketjuttamalla erillaisia ky
     
  Minkä avulla pääsi muokkaamaan taulukkoa.
  
- SQL-injektio hyökkäys oli mahdollista, sillä käyttäjällä oli suora pääsy tietokantaan ja erillaisten SQL-kielen metamerkkien, kuten " -- , ' , ja ; " syöttäminen syötekenttään oli mahdollista 
+ SQL-injektio hyökkäys oli mahdollista, sillä käyttäjällä oli suora pääsy tietokantaan ja erillaisten SQL-kielen metamerkkien, kuten " -- , ' , ja ; " syöttäminen syötekenttään oli mahdollista.
+ 
+ 
+ SQL-hyökkäyksiä vastaan voi puolustautua esimerkiksi kieltämällä erillaisten symbolien syöttämisen syötekenttään. Parametrisoidut komennot taas luovat SQL-kyselyn etukäteen, mikä estää uusien SQL-kyselyiden luomisen ja jonka seurauksena hyökkääjä ei voi lisätä uusia komentoja syötteessen. Kolmas tapa estää SQL-hyökkäyksiä on tiedon hajauttaminen ja estämällä käyttäjän pääsyn suoraan tietokantaan.
+ 
+ 
+ 
+ ![image](https://user-images.githubusercontent.com/106889187/229304298-3239a758-829d-4214-90f2-c9e863b5b52d.png)
+
 
 
 
