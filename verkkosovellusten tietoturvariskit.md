@@ -17,7 +17,7 @@
 
 
 
-## SQL-injektio hyökkäys 
+## Injection - SQL-injection
 
 SQL-injektio on hyökkäys, missä vahingollista koodia saadaan syötettyä tietokantaan erillaisten asiakasohjelmien kautta ja hyökkäjä pääsee sellaisiin tietoihin käsiksi, mihin hänellä ei ole oikeuksia. SQL-hyökkäykset ovat suuri riski datan eheydelle ja turvallisuudelle.
 
@@ -39,7 +39,9 @@ Toinen komento minkä avulla hyökkäys onnistui oli ketjuttamalla erillaisia ky
  SQL-hyökkäyksiä vastaan voi puolustautua esimerkiksi kieltämällä erillaisten symbolien syöttämisen syötekenttään. Parametrisoidut komennot taas luovat SQL-kyselyn etukäteen, mikä estää uusien SQL-kyselyiden luomisen ja jonka seurauksena hyökkääjä ei voi lisätä uusia komentoja syötteessen. Kolmas tapa estää SQL-hyökkäyksiä on tiedon hajauttaminen ja käyttäjän oikeuksien tarkka määrittäminen.
  
  
-## 2FA Password Reset
+ ![image](https://user-images.githubusercontent.com/106889187/229304298-3239a758-829d-4214-90f2-c9e863b5b52d.png)
+ 
+## Broken Authentication - Authentication Bypasses
 
 Authentication bypasses hyökkäyksissä tarkoituksena ohittaa erillaiset varmenteet kirjautumisessa yleensä hyödyntämällä virhettä konfiguraatiossa tai logiikassa.
 
@@ -51,21 +53,34 @@ Hyökkäys onnistui, sillä aplikaatiossa oli annettu lupa käyttäjän muokata 
 ![image](https://user-images.githubusercontent.com/106889187/229314122-c52e39b1-65bf-4b17-99d1-a7b5d09de55d.png)
 
 
+## Sensitive Data Exposure - Insecure Login
+
+Herkän ja salaamattoman datan vuotaminen toteutuu jos dataa ei siirtäessä tai varastoidessa salata eri menetelmillä.
+
+Hyökkäyksen tarkoitus oli saada selvillä käyttäjän kirjautumistietoja pakettianalysaattorin avulla. Lähettämällä tyhjän kirjautumispyynön pääsin tarkastelemaan pyynnön tietoja ja löysin toisen käyttäjän kirjautumistiedot salaamattomina. 
+
+Hyökkäys onnistui, koska herkkää dataa ei oltu salattu ja suojattu.
+
+Hyökkäys voitaisiin estää käyttämällä HTTPS protokollaa ja varmistamalla, että kaikki data on suojattua. Salasanat myös pitäisi suojata  suolatuilla hajautusalgoritmeillä.
 
 
+![image](https://user-images.githubusercontent.com/106889187/229315477-ccbd9e32-28ce-404f-8947-21f0b679d586.png)
 
- 
- ![image](https://user-images.githubusercontent.com/106889187/229304298-3239a758-829d-4214-90f2-c9e863b5b52d.png)
 
 
 
 
  ## Lopuksi 
  
- Tässä harjoituksessa harjoittelin uusien komentojen luontia Bahilla ja Pythonilla.
+ Tässä harjoituksessa tutustuin erillaisiin verkkosovellusten tietoturvariskeihin.
  
  
 ## Lähteet
+
+Kurssin tietoturvan perusteet - ICI002AS2A-3006 luentokalvot
+
+OWASP (https://owasp.org/)
+
 
 Mikä on SQL injection -hyökkäys?, Laura Klusaitė - 09.03.2023 (https://nordvpn.com/fi/blog/sql-injektio/)
 
