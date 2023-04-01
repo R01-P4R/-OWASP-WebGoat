@@ -39,6 +39,21 @@ Toinen komento minkä avulla hyökkäys onnistui oli ketjuttamalla erillaisia ky
  SQL-hyökkäyksiä vastaan voi puolustautua esimerkiksi kieltämällä erillaisten symbolien syöttämisen syötekenttään. Parametrisoidut komennot taas luovat SQL-kyselyn etukäteen, mikä estää uusien SQL-kyselyiden luomisen ja jonka seurauksena hyökkääjä ei voi lisätä uusia komentoja syötteessen. Kolmas tapa estää SQL-hyökkäyksiä on tiedon hajauttaminen ja käyttäjän oikeuksien tarkka määrittäminen.
  
  
+## 2FA Password Reset
+
+Authentication bypasses hyökkäyksissä tarkoituksena ohittaa erillaiset varmenteet kirjautumisessa yleensä hyödyntämällä virhettä konfiguraatiossa tai logiikassa.
+
+
+Hyökkäyksessä oli tarkoitus ohittaa kaksi turvakysymystä. Käytin hyödyksi OWASP ZAP välityspalvelinta ja ennenkuin painoin kirjautumista niin keskeytin nettisivulta tulevat pyynnöt. Kun painoin kirjautumista, niin pääsin tarkastelemaan uutta pyyntöä, ilman että se menisi eteenpäin ja toteutuisi vääräksi. Muutin pyynnön parametrejä lisäämällä niihin uusia merkkejä, jonka seurauksena kysymykset ohitettiin.
+
+Hyökkäys onnistui, sillä aplikaatiossa oli annettu lupa käyttäjän muokata pyyntöjä, ennen niiden lähettämistä eteenpäin. Varmenneprotokolla ei saisi olla esillä ja saatavilla asiakaspuolen verkkoselaimen komentosarjassa ja käyttäjän antama syöte tulisi tarkistaa palvelimen puolella.
+
+![image](https://user-images.githubusercontent.com/106889187/229314122-c52e39b1-65bf-4b17-99d1-a7b5d09de55d.png)
+
+
+
+
+
  
  ![image](https://user-images.githubusercontent.com/106889187/229304298-3239a758-829d-4214-90f2-c9e863b5b52d.png)
 
