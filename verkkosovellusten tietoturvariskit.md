@@ -52,9 +52,7 @@ Toinen komento minkä avulla hyökkäys onnistui oli ketjuttamalla erillaisia ky
  
 ## Lähteet
 
-Linux Palvelimet 2023 alkukevät, Tero Karvinen (https://terokarvinen.com/2023/linux-palvelimet-2023-alkukevat/)
-
-30 Bash Script Examples, Fahmida Yesmin - 2018 (https://linuxhint.com/30_bash_script_examples/)
+Mikä on SQL injection -hyökkäys?, Laura Klusaitė - 09.03.2023 (https://nordvpn.com/fi/blog/sql-injektio/)
 
 
-#### Tehnyt Roi Partanen (13.3.2023)
+#### Tehnyt Roi Partanen (1.4.2023)
